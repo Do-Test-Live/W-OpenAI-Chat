@@ -38,7 +38,7 @@ class Referral extends Component {
 						<ArrowDownIcon className={`h-3 w-3 md:h-6 md:w-6 text-gray-400 `} aria-hidden="true" />
 					</div>
                   </div>
-				  
+
                 <div className="flex items-center">
 					<div className={`flex-shrink-0 inline-flex items-center justify-center md:h-12 md:w-12 h-6 w-6 rounded-full bg-green-200 sm:mx-0 sm:h-10 sm:w-10`}>
 						<UsersIcon className={`h-3 w-3 md:h-6 md:w-6 text-green-700 `} aria-hidden="true" />
@@ -55,7 +55,7 @@ class Referral extends Component {
 
 				  <div className="flex mt-4 mb-4">
 				 		<div className="mt-1 flex rounded-md flex-1">
-                       
+
                         <input
                           id="referral"
                           type="text"
@@ -64,15 +64,15 @@ class Referral extends Component {
                           placeholder="www.example.com"
 						  onChange={()=>{}}
 						  onClick={()=>{
-							document.getElementById("referral").select();  
+							document.getElementById("referral").select();
 							  this.props.store.copyToClipboard(`${window.store.landingPageUrl}/signup?referral=${this.props.store.profile.referralId}`
 							)}}
                         />
                       </div>
 
-					  
 
-					{/* <input 
+
+					{/* <input
 						type="url"
 						value={`https://app.subwriter.ai/signup?ref=123123`}
 						className="focus:outline-none text-lg bg-white rounded-md px-4 py-2 border border-gray-300 font-regular flex-1" /> */}
@@ -86,7 +86,7 @@ class Referral extends Component {
 					</div>
 
 					{/* // eslint-disable-next-line react/jsx-no-target-blank */}
-					<a rel="noopener noreferrer" href={`https://twitter.com/intent/tweet?text=Check out OpenAI Template and give it a try with the following link: ${window.store.landingPageUrl}/signup?referral=${this.props.store.profile.referralId}`} className="flex items-center" target="_blank">
+					<a rel="noopener noreferrer" href={`https://twitter.com/intent/tweet?text=Check out NGT Tech and give it a try with the following link: ${window.store.landingPageUrl}/signup?referral=${this.props.store.profile.referralId}`} className="flex items-center" target="_blank">
 							<div className={`cursor-pointer bg-gray-200 text-gray-700 hover:bg-gray-300 hover:text-gray-800 flex-shrink-0 inline-flex items-center justify-center md:h-16 md:w-16 h-6 w-6 rounded-full  sm:mx-0 sm:h-12 sm:w-12`}>
 								<TwitterIcon className={`h-3 w-3 md:h-8 md:w-8`} aria-hidden="true" />
 							</div>
@@ -98,18 +98,18 @@ class Referral extends Component {
 							</div>
 					</a>
 				</div>
-				
+
 
 				</div>
 
                 </div>
-			
+
 			</>
 		)
 	}
 }
 
-  
+
 
 
 export default Referral
